@@ -11,6 +11,7 @@
     "build": "npm-run-all clean lint tsc copy-assets",
     "dev:start": "npm-run-all build start",
     "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
+    "docker":"nodemon --watch src -e ts,ejs --exec npm run start",
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
